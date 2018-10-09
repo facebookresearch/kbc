@@ -1,0 +1,8 @@
+build
+*.egg-info
+**/__pycache__
+**/*cpython*
+kbc/lib/bindings.cpp
+dist
+kbc/data
+**/.nfs*
