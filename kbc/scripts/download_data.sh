@@ -10,6 +10,6 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../" && pwd )"
 cd $DIR
 
-wget https://s3.amazonaws.com/kbcdata/data.tar.gz
+wget https://dl.fbaipublicfiles.com/kbc/data.tar.gz
 tar -xvzf data.tar.gz
 rm data.tar.gz
