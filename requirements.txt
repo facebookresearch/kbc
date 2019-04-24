@@ -1,37 +1,5 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-# platform: linux-64
-bzip2=1.0.6=17
-certifi=2018.1.18=py36_2
-cffi=1.11.5=py36_3
-cython=0.28.5=py36h1aa3f02_0
-daal=2019.0=intel_117
-icc_rt=2019.0=intel_117
-intel-openmp=2019.0=intel_117
-intelpython=2019.0=2
-libffi=3.2.1=11
-libgcc-ng=8.2.0=hdf63c60_1
-libstdcxx-ng=8.2.0=hdf63c60_1
-mkl=2019.0=intel_117
-mkl_fft=1.0.6=py36_0
-mkl_random=1.0.1=py36_8
-ninja=1.8.2=py36h6bb024c_1
-numpy=1.15.1=py36h1aa3f02_0
-numpy-base=1.15.1=py36_0
-openssl=1.0.2o=3
-pip=9.0.3=py36_1
-pycparser=2.18=py36_2
-pydaal=2019.0.0.20180713=py36_1
-python=3.6.5=11
-pytorch=0.4.1=py36_py35_py27__9.0.176_7.1.2_2
-scikit-learn=0.19.2=py36_2
-scipy=1.1.0=np115py36_6
-setuptools=39.0.1=py36_0
-sqlite=3.23.1=1
-tbb=2019.0=intel_117
-tbb4py=2019.0=py36_intel_0
-tcl=8.6.4=20
-tk=8.6.4=28
-wheel=0.31.0=py36_2
-xz=5.2.3=2
-zlib=1.2.11=5
+tqdm
+pytorch
+numpy
+scikit-learn
+scipy
