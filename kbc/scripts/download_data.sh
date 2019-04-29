@@ -12,4 +12,5 @@ cd $DIR
 
 wget https://dl.fbaipublicfiles.com/kbc/data.tar.gz
 tar -xvzf data.tar.gz
+mv data src_data
 rm data.tar.gz
