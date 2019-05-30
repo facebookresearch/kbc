@@ -37,7 +37,9 @@ regularized with the weighted N3 on several datasets, for several dimensions.
 ### FB15k
 
 Learning rate : 0.1 (0.01 for rank 2000)
+
 Batch size : 1000 (100 for rank 2000)
+
 Max Epochs : 100 (200 for rank 2000)
 
 |   rank     | 5|25|50|100|500|2000|
@@ -54,7 +56,9 @@ Max Epochs : 100 (200 for rank 2000)
 ### WN18
 
 Learning rate : 0.1
+
 Batch_size : 1000
+
 Max Epochs : 20
 
 |   rank     | 5|8|16|25|50|100|500|2000 |
@@ -71,7 +75,9 @@ Max Epochs : 20
 ### FB15K-237
 
 Learning rate : 0.1
+
 Batch Size : 100 (1000 for rank 1000)
+
 Max Epochs : 100
 
 |   rank     | 5|25|50|100|500|1000|2000 |
@@ -88,7 +94,9 @@ Max Epochs : 100
 ### WN18RR
 
 Learning rate : 0.1
+
 Batch Size : 100 (1000 for rank 8)
+
 Max Epochs : 100
 
 |   rank     | 5|8|16|25|50|100|500|2000 |
@@ -98,13 +106,16 @@ Max Epochs : 100
 |   H@3      | 0.29|0.38|0.42|0.45|0.47|0.49|0.50|0.50 |
 |   H@10     | 0.36|0.41|0.46|0.49|0.52|0.56|0.58|0.58 |
 |            |  | | | | | | |  |
+|            |  | | | | | | |  |
 |   reg      | 5e-4|5e-4|5e-2|1e-1|1e-1|1e-1|1e-1|1e-1 |
 |   #Params  | 410k|655k|1.311M|2.048M|4.097M|8.193M|40.975M|163.860M |
 
 ### YAGO3-10
 
 Learning rate : 0.1
+
 Batch Size : 1000
+
 Max Epochs : 100
 
 |   rank     | 5|16|25|50|100|500|1000 |
@@ -114,6 +125,7 @@ Max Epochs : 100
 |   H@3      | 0.16|0.37|0.50|0.58|0.60|0.62|0.62 |
 |   H@10     | 0.25|0.50|0.60|0.67|0.69|0.71|0.71 |
 |            |  | | | | | |  |
+|            |  | | | | | | |  |
 |   reg      | 1e-3|1e-4|5e-3|5e-3|5e-3|5e-3|5e-3 |
 |   #Params  | 1.233M|3.944M|6.163M|1.233M|24.652M|123.262M|246.524M|
 
