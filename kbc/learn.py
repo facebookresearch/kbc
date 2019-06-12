@@ -68,7 +68,7 @@ parser.add_argument(
     help="Regularization weight"
 )
 parser.add_argument(
-    '--init', default=1e-1, type=float,
+    '--init', default=1e-3, type=float,
     help="Initial scale"
 )
 parser.add_argument(

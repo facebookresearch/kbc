@@ -31,16 +31,12 @@ This will create the files required to compute the filtered metrics.
 
 ## Results
 In addition to the results in the [paper](https://arxiv.org/abs/1806.07297), here are the performances of ComplEx 
-regularized with the weighted N3 on several datasets, for several dimensions.
+regularized with the weighted N3 on several datasets, for several dimensions. We use an init scale of 1e-3, a learning rate of 0.1, a batch size of 1000 and 100 max epochs unless specified otherwise. We use the Adagrad optimizer.
 
 
 ### FB15k
 
-Learning rate : 0.1 (0.01 for rank 2000)
-
-Batch size : 1000 (100 for rank 2000)
-
-Max Epochs : 100 (200 for rank 2000)
+For rank 2000 : learning rate 1e-2, batch-size 100, max epochs 200.
 
 |   rank     | 5|25|50|100|500|2000|
 |------------|--|--|--|---|---|----|
@@ -54,10 +50,6 @@ Max Epochs : 100 (200 for rank 2000)
 |   #Params  | 163k|815k|1.630M|3.259M|1.630M|65.184M |
 
 ### WN18
-
-Learning rate : 0.1
-
-Batch_size : 1000
 
 Max Epochs : 20
 
@@ -74,11 +66,7 @@ Max Epochs : 20
 
 ### FB15K-237
 
-Learning rate : 0.1
-
 Batch Size : 100 (1000 for rank 1000)
-
-Max Epochs : 100
 
 |   rank     | 5|25|50|100|500|1000|2000 |
 |------------| -|-|-|-|-|-|- |
@@ -93,11 +81,7 @@ Max Epochs : 100
 
 ### WN18RR
 
-Learning rate : 0.1
-
 Batch Size : 100 (1000 for rank 8)
-
-Max Epochs : 100
 
 |   rank     | 5|8|16|25|50|100|500|2000 |
 |------------| -|-|-|-|-|-|-|- |
@@ -111,12 +95,6 @@ Max Epochs : 100
 |   #Params  | 410k|655k|1.311M|2.048M|4.097M|8.193M|40.975M|163.860M |
 
 ### YAGO3-10
-
-Learning rate : 0.1
-
-Batch Size : 1000
-
-Max Epochs : 100
 
 |   rank     | 5|16|25|50|100|500|1000 |
 |------------| -|-|-|-|-|-|- |
