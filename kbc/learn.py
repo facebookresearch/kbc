@@ -60,7 +60,7 @@ parser.add_argument(
     help="Factorization rank."
 )
 parser.add_argument(
-    '--batch_size', default=100, type=int,
+    '--batch_size', default=1000, type=int,
     help="Factorization rank."
 )
 parser.add_argument(
@@ -72,7 +72,7 @@ parser.add_argument(
     help="Initial scale"
 )
 parser.add_argument(
-    '--learning_rate', default=10, type=float,
+    '--learning_rate', default=1e-1, type=float,
     help="Learning rate"
 )
 parser.add_argument(
