@@ -29,6 +29,14 @@ python kbc/process_datasets.py
 
 This will create the files required to compute the filtered metrics.
 
+## Running the code
+Reproduce the results below with the following command :
+```
+python kbc/learn.py --dataset FB15K --model ComplEx --rank 500 --optimizer
+Adagrad --learning_rate 1e-1 --batch_size 1000 --regularizer N3 --reg 1e-2
+ --max_epochs 100 --valid 5
+```
+
 ## Results
 In addition to the results in the [paper](https://arxiv.org/abs/1806.07297), here are the performances of ComplEx 
 regularized with the weighted N3 on several datasets, for several dimensions. We use an init scale of 1e-3, a learning rate of 0.1, a batch size of 1000 and 100 max epochs unless specified otherwise. We use the Adagrad optimizer.
