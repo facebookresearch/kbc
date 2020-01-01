@@ -13,7 +13,7 @@ from torch import optim
 
 from kbc.datasets import Dataset
 from kbc.models import CP, ComplEx
-from kbc.regularizers import N2, N3
+from kbc.regularizers import F2, N3
 from kbc.optimizers import KBCOptimizer
 
 
@@ -35,7 +35,7 @@ parser.add_argument(
     help="Model in {}".format(models)
 )
 
-regularizers = ['N3', 'N2']
+regularizers = ['N3', 'F2']
 parser.add_argument(
     '--regularizer', choices=regularizers, default='N3',
     help="Regularizer in {}".format(regularizers)
@@ -95,7 +95,7 @@ model = {
 }[args.model]()
 
 regularizer = {
-    'N2': N2(args.reg),
+    'F2': F2(args.reg),
     'N3': N3(args.reg),
 }[args.regularizer]
 

@@ -17,17 +17,15 @@ class Regularizer(nn.Module, ABC):
         pass
 
 
-class N2(Regularizer):
+class F2(Regularizer):
     def __init__(self, weight: float):
-        super(N2, self).__init__()
+        super(F2, self).__init__()
         self.weight = weight
 
     def forward(self, factors):
         norm = 0
         for f in factors:
-            norm += self.weight * torch.sum(
-                torch.norm(f, 2, 1) ** 3
-            )
+            norm += self.weight * torch.sum(f ** 2)
         return norm / factors[0].shape[0]
 
 
